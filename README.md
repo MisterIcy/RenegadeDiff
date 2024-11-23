@@ -1,16 +1,13 @@
-# RenegadeDiff
+# Renegade Diff
 
-> Where code meets its match.
+<p align="center">
+  <img src="./doc/renegade-diff.png" alt="Where code meets its match">
+</p>
+
 
 ## Overview
 
-**RenegadeDiff** is an AI-powered GitHub Action that conducts ruthless code
-reviews, analyzing pull requests with the precision of a digital vigilante.
-
-## Key Features
-
-- Autonomous Code Analysis
-- Generative AI Insights
+**Renegade Diff** is an Github Action that conducts ruthless code reviews and analyses pull requests with the precision of a digital vigilante that is powered by Generative AI.
 
 ## Usage
 
