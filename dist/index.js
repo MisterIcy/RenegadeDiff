@@ -35877,6 +35877,8 @@ const instructionPrompt = `Here are the instructions on how to perform your task
 
 Your output must be given in the schema specified. Do not add any other output besides this. 
 Your comments must always follow the conventional: comments notation.
+You may not use headings (\#\#\#) for your comments. Use bold or italics instead.
+You may use emojis as you please.
 `;
 class Reviewer {
     apiKey;
