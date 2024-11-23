@@ -7,7 +7,7 @@
 
 ## Overview
 
-**Renegade Diff** is an Github Action that conducts ruthless code reviews and analyses pull requests with the precision of a vigilnte that is powered by Generative AI.
+**Renegade Diff** is an Github Action that conducts ruthless code reviews and analyses pull requests with the precision of a digital vigilante that is powered by Generative AI.
 
 ## Usage
 
