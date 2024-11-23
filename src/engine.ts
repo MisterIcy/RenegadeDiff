@@ -74,9 +74,10 @@ export class Engine {
       comments: review.specifics
     })
 
-    if (reviewResponse.data.errors) {
+    
+    if (reviewResponse.status !== 200) {
       core.setFailed(
-        `"An error occured while performing code review: ${reviewResponse.data.errors[0]}"`
+        `"An error occured while submitting code review: ${reviewResponse.status}"`
       )
     }
 

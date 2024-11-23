@@ -1,0 +1,22 @@
+name: 'Automagic Review'
+on:
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  generate-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Generate Review
+        uses: MisterIcy/RenegadeDiff@main
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
