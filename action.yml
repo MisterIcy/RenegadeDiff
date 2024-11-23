@@ -1,0 +1,31 @@
+name: 'Renegade Diff'
+description: |
+  Advanced AI-powered code review system that autonomously analyzes your pull requests.
+
+branding:
+  icon: 'life-buoy'
+  color: purple
+
+inputs:
+  github-token:
+    description: |
+      Github token for authentication and access to Pull Requests (write) and Contents (read)
+    required: true
+    default: '${{ github.token }}'
+
+  openai-api-key:
+    description: |
+      The Key for OpenAI's API
+    required: true
+
+  organization:
+    required: false
+    description: The github organization or repository owner where the PR
+
+  repository:
+    required: false
+    description:
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
