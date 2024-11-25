@@ -4,7 +4,7 @@
   <img src="./doc/renegade-diff.png" alt="Where code meets its match">
 </p>
 
-> ![WARNING]
+> [!WARNING]  
 > 
 > This GitHub Action utilizes the OpenAI API to perform code reviews on Pull Requests. As part of its functionality, it transfers the code contained in the Pull Request to OpenAI systems to generate completion responses.
 > 
