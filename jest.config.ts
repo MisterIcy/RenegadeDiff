@@ -3,7 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
-import type {Config} from 'jest';
+import type { Config } from 'jest'
 
 const config: Config = {
   // All imported modules in your tests should be mocked automatically
@@ -22,33 +22,26 @@ const config: Config = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ["./src/**/*.ts"],
+  collectCoverageFrom: ['./src/**/*.ts'],
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: [
-    "/node_modules/",
-    "/dist/",
-    "/coverage/"
-  ],
+  coveragePathIgnorePatterns: ['/node_modules/', '/dist/', '/coverage/'],
 
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: "v8",
+  coverageProvider: 'v8',
 
   // A list of reporter names that Jest uses when writing coverage reports
-  coverageReporters: [
-     "clover",
-     "html"
-  ],
+  coverageReporters: ['clover', 'html'],
 
   // An object that configures minimum threshold enforcement for coverage results
   coverageThreshold: {
     global: {
       branches: 75,
       functions: 75,
-      lines: 75,
+      lines: 75
     }
   },
 
@@ -56,8 +49,8 @@ const config: Config = {
   // dependencyExtractor: undefined,
 
   displayName: {
-    name: "Renegade Diff",
-    color: "magentaBright"
+    name: 'Renegade Diff',
+    color: 'magentaBright'
   },
 
   // Make calling deprecated APIs throw helpful error messages
@@ -81,12 +74,10 @@ const config: Config = {
   // globals: {},
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
-  maxWorkers: "50%",
+  maxWorkers: '50%',
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  moduleDirectories: [
-     "node_modules"
-  ],
+  moduleDirectories: ['node_modules'],
 
   // An array of file extensions your modules use
   // moduleFileExtensions: [
@@ -135,7 +126,7 @@ const config: Config = {
   // restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
-  rootDir: ".",
+  rootDir: '.',
 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
@@ -188,7 +179,7 @@ const config: Config = {
 
   // A map from regular expressions to paths to transformers
   transform: {
-    "^.+\\.ts$": "ts-jest"
+    '^.+\\.ts$': 'ts-jest'
   }
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
@@ -208,6 +199,6 @@ const config: Config = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-};
+}
 
-export default config;
+export default config
