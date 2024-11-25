@@ -89,7 +89,7 @@ export class DiffFactory {
         const localFilePath = line.substring(4)
         if (localFilePath !== '/dev/null') {
           // For other operations, we keep the new file name
-          currentObj!.fileName = localFilePath.startsWith('a/')
+          currentObj!.fileName = localFilePath.startsWith('b/')
             ? localFilePath.substring(2)
             : localFilePath
         }
