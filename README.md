@@ -6,7 +6,7 @@
 
 > [!WARNING]  
 > 
-> This GitHub Action utilizes the OpenAI API to perform code reviews on Pull Requests. As part of its functionality, it transfers the code contained in the Pull Request to OpenAI systems to generate completion responses.
+> This GitHub Action utilizes the OpenAI API to perform code reviews on Pull Requests. As part of its functionality, it transfers the code and related data, such as Pull Request Title & Body, contained in your repository to OpenAI systems to generate completion responses.
 > 
 > ## Important Notes
 > 1. **Data Privacy**: The code and related context provided to the API may be temporarily processed and stored by OpenAI in accordance with their data usage policies. Refer to [OpenAI's API data usage policy](https://openai.com/policies/api-data-usage-policies) for more information.
